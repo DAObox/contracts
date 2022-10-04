@@ -11,7 +11,7 @@ const transactionSettings = {
 async function main() {
     const dao = loadDaoFromFile()
     const metadata = 'some test vote'
-    const forwarder = await hre.ethers.getContractAt('VotesForwarder', dao.forwarder)
+    const forwarder = await hre.ethers.getContractAt('VotesForwarder', dao.votesForwarder)
     const voteScript = createVoteScript(dao.voting, metadata, transactionSettings)
     const receipt = await (await forwarder.forward(voteScript)).wait()
     console.log(`vote created: ${getTenderlyTransaction(hre.network.name, receipt.transactionHash)}`)
