@@ -13,11 +13,16 @@
     <a href="https://github.com/DAObox/contracts/issues"><b>Issues</b></a>
 </div>
 
+
+<br/>
+
 ## 🗳️ About Dao Box
 
 Meta Transaction enabled DAO platform powered by [Lens Protocol](http://lens.xyz), [Biconomy](https://biconomy.io), and [Aragon](https://aragon.org/). DAO Box leverages the Vote Delegation feature built into Lens protocol NFTs, and enables communities to spin up a DAO governed by a follow NFT.
 
 DAOs come equipped with a treasury contract that can interact with any other on polygon as well as onchain gas-less voting. Discussions are also baked into the platform and powered by lens. With DAO Box you no longer need snapshot or a Discourse forum, you get everything you need out the box!
+
+<br/>
 
 ## ⚙️ Setup
 
@@ -27,6 +32,8 @@ DAOs come equipped with a treasury contract that can interact with any other on 
 cp .env.example .env
 pnpm install
 ```
+
+<br/>
 
 ### 🔧 Tenderly (Optional)
 
@@ -51,6 +58,8 @@ initialize the project
 tenderly init
 ```
 
+<br/>
+
 ### 👷🏾 Deploying Contracts
 
 Deployment will only work on Mumbai or a fork network. We rely on some factory contracts from Aragon Classic which are deployed there.
@@ -63,9 +72,13 @@ then deploy with
 npx deploy --network mumbai
 ```
 
+<br/>
+
 ## ✅ Community
 
 For a place to have open discussions on features, voice your ideas, or get help with general questions please visit our community at [Discord](https://discord.gg/F6qgHwZahQ).
+
+<br/>
 
 ## ⚖️ License
 
