@@ -7,12 +7,9 @@ export function getTenderlyTransaction(network: string, hash: string) {
 }
 
 export function writeDaoToFile(token: { token: string }, receipt: Receipt) {
-    let data = token
     const res = receipt.events?.filter((x) => x.event == 'DAORegistered')[0]?.args
 
-    for (let [key, value] of Object.entries(res)) {
-        isNaN(key) && (data[key] = BigNumber.isBigNumber(value) ? value.toString() : value)
-    }
+    const data = { ...token, ...objectifyLog(res) }
 
     fs.writeFile('./settings/dao.json', JSON.stringify(data, null, 2), function (err: any) {
         if (err) return console.log(err)
@@ -29,4 +26,12 @@ export function loadDaoFromFile() {
         console.log('no dao.json found')
         process.exitCode = 1
     }
+}
+
+export function objectifyLog(log: any) {
+    const data = {}
+    for (let [key, value] of Object.entries(log)) {
+        isNaN(key) && (data[key] = BigNumber.isBigNumber(value) ? value.toString() : value)
+    }
+    return data
 }
