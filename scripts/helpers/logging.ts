@@ -21,3 +21,12 @@ export function writeDaoToFile(token: { token: string }, receipt: Receipt) {
 
     return data
 }
+
+export function loadDaoFromFile() {
+    try {
+        return JSON.parse(fs.readFileSync('./settings/dao.json', 'utf8'))
+    } catch (err) {
+        console.log('no dao.json found')
+        process.exitCode = 1
+    }
+}
