@@ -22,6 +22,7 @@
   "dependencies": {
     "@aragon/apps-agent": "^2.1.0",
     "@aragon/id": "^2.1.1",
-    "@aragon/os": "^4.4.0"
+    "@aragon/os": "^4.4.0",
+    "web3.storage": "^4.4.0"
   }
 }

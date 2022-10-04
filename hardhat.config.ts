@@ -9,6 +9,8 @@ import '@nomiclabs/hardhat-etherscan'
 import * as tdly from '@tenderly/hardhat-tenderly'
 tdly.setup({ automaticVerifications: false })
 
+import './tasks'
+
 const ENV = process.env
 
 const config: HardhatUserConfig = {

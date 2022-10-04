@@ -10,3 +10,4 @@ cache
 artifacts
 
 deployments/*/solcInputs/
+.DS_Store
