@@ -10,6 +10,7 @@ export default task('dao-data', 'Publishes daos metadata to ipfs')
     .setAction(async ({ daoName, description }) => {
         const cid = await storeDaoData(daoName, description)
         console.log(`https://ipfs.io/ipfs/${cid}`)
+        return cid
     })
 
 async function storeDaoData(name: string, description: string) {
