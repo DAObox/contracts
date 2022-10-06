@@ -45,6 +45,7 @@ contract DBVoting is IForwarder, AragonApp {
         uint256 yea;
         uint256 nay;
         uint256 votingPower;
+        string metadata;
         bytes executionScript;
         mapping(address => VoterState) voters;
     }
@@ -262,6 +263,7 @@ contract DBVoting is IForwarder, AragonApp {
             uint256 yea,
             uint256 nay,
             uint256 votingPower,
+            string metadata,
             bytes script
         )
     {
@@ -276,6 +278,7 @@ contract DBVoting is IForwarder, AragonApp {
         yea = vote_.yea;
         nay = vote_.nay;
         votingPower = vote_.votingPower;
+        metadata = vote_.metadata;
         script = vote_.executionScript;
     }
 
@@ -312,6 +315,7 @@ contract DBVoting is IForwarder, AragonApp {
         vote_.supportRequiredPct = supportRequiredPct;
         vote_.minAcceptQuorumPct = minAcceptQuorumPct;
         vote_.votingPower = votingPower;
+        vote_.metadata = _metadata;
         vote_.executionScript = _executionScript;
 
         emit StartVote(voteId, msg.sender, _metadata);
