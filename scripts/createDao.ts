@@ -5,9 +5,9 @@ import { DBRegistry } from '../typechain-types/contracts/DBRegistry'
 import { writeDaoToFile } from './helpers'
 
 // DAO Names (aragonId) must be unique
-const daoName = 'test' + Math.random().toString(36).substring(7)
+const daoName = 'test-dao-' + Math.random().toString(36).substring(7)
 // Description of DAO
-const description = 'test'
+const description = 'some imaginative description'
 
 async function main() {
     const deployer = (await hre.ethers.getSigners())[0]

@@ -315,7 +315,7 @@ contract DBVoting is IForwarder, AragonApp {
         vote_.supportRequiredPct = supportRequiredPct;
         vote_.minAcceptQuorumPct = minAcceptQuorumPct;
         vote_.votingPower = votingPower;
-        vote_._metadata = _metadata;
+        vote_.metadata = _metadata;
         vote_.executionScript = _executionScript;
 
         emit StartVote(voteId, msg.sender, _metadata);

@@ -1,11 +1,11 @@
 {
-  "token": "0x80A16af624F42E79667F6e9Cb0B710b18Fc72378",
-  "dao": "0xA4c5f9F39366F5C30E5b562376Ea931873aA1661",
-  "acl": "0x4c8f80067cb28B019082bC78a97cba743829b949",
-  "agent": "0x1AF9cc763a3f22ca808E9AAa9c2eed8cC9b64197",
-  "voting": "0xEd31564047D384dfdffbBd49228C33781378B984",
-  "votesForwarder": "0xd95daC3e7dCC262EDdDDA73D09c14d91214da454",
-  "daoId": "35",
-  "aragonId": "testh9rdhf",
-  "metadata": "bafybeihslxwqvxpuhzjjinc2cccwwusiy3rhpxg4cdjpx2a3nkbvbclh6m"
+  "token": "0xBcE8dCA2079f46F9014edF0f6054121e8A44460d",
+  "dao": "0xEDd1f069252ba2Fb7eF7D369b7449F208B419C8F",
+  "acl": "0x2b6C632573BBEe92cF561676eD3bDaE929072EE8",
+  "agent": "0xd6a2DA8417f52727E28fFB6f3A424f5d22d0730b",
+  "voting": "0x0eC205fB7F5EEC6D7bA3D0E59Bc5395e39090997",
+  "votesForwarder": "0x84875FBDcE1E01a3Bf15460A0B7A64877B581dE6",
+  "daoId": "3",
+  "aragonId": "test-dao4sbqs",
+  "metadata": "bafybeif42oxbba2id5hfpvv263jcaol2itm2nbqfs3dfcez5wblh5lrx7e"
 }
