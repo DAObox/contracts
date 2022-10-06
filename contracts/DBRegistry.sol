@@ -39,6 +39,7 @@ contract DBRegistry {
         DBVoting voting,
         VotesForwarder votesForwarder,
         uint256 daoId,
+        string aragonId,
         string metadata
     );
 
@@ -50,7 +51,7 @@ contract DBRegistry {
         template = _template;
     }
 
-    function newDAO(
+    function newDefaultDAO(
         address _token,
         string _id,
         string _metadata
@@ -89,7 +90,7 @@ contract DBRegistry {
             metadata: _metadata
         });
         daosByName[_id] = id;
-        emit DAORegistered(dao, acl, agent, voting, forwarder, id, _metadata);
+        emit DAORegistered(dao, acl, agent, voting, forwarder, id, _id, _metadata);
     }
 
     /* ====================================================================== //
